@@ -1,72 +1,157 @@
 <!DOCTYPE html>
-<hmtl lang="en">
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>Zhizhou Wang</title>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis">
-		<link rel="stylesheet" type="text/css" href="./css/style.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type='text/javascript' src='./js/script2.js'></script>
-	</head>
-	<body>
-		<div id="body">
-		<div id="sample">
-			<img src="./img/info/homelessness.jpg" alt="Homelessness" width="1200">
-		</div>
-		<div id="title">
-			<p> Infographics </p>
-		</div>
-		<div id="fixed">
-			<a href="index.html"><div class = "nav"><p> Home </p></div></a>
-			<a href="poster.html"><div class = "nav" style="margin-top:10px"><p> Posters </p></div></a>
-			<a href="photo.html"><div class = "nav" style="margin-top:10px"><p> Photos </p></div></a>
-			<a href="video.html"><div class = "nav" style="margin-top:10px"><p> Videos </p></div></a>
-			<a href="aboutme.html"><div class = "nav" style="margin-top:10px"><p> About Me </p></div></a>
-		</div>
-		<div id="all">
-			<div class="content">
-				<div class="example">
-					<h1 class="name"> Can Your Salary Balance Your House Value?</h1>
-					<p class="description">On a Single Night in January 2014, 578,424 people were homeless in the United States. In the past eight years, the total homeless population in the United States was decreasing. This is undoubtedly a good news. However, the total homelesspopulation in the New York City was increasing constantly. Coincidentally, in most of the largest cities in the United States, the homeless population is actually rising comparing to reduction in the nation wide. This comparison thus raises our question. Why does this situation happen?</p>
-				</div>
-				<div class="smallPic">
-					<a href="./img/info/homelessnessL.jpg"><img id="homeless" src="./img/info/homelessness.jpg" alt="Homelessness" width="700px"></a>
-				</div>
-				<div class="example">
-					<h1 class="name"> What Makes Him a Hero</h1>
-					<p class="description">Captain America, one of the most famous Marvel Super Heroes, has a great fame even in China. This infographic is about Captain America. Comparing him with himself, with normal people, with other Avengers, as well as with his enemy, we explore the special character of this normal but anormal person, see what makes him different from others.</p>
-				</div>
-				<div class="smallPic">
-					<a href="./img/info/captainL.jpg"><img id="cap" src="./img/info/captainC.png" alt="Captain America" width="500px"></a>
-				</div>
-				<div class="example">
-					<h1 class="name"> Miami Underwater</h1>
-					<p class="description">The sea level rise is one of the most critical challenge confronted by Miami. In this project, we discuss the sea level rise through several aspects: history, future tendency, relationship with economy, impact on storm, as well as policies. This is a group working project using 3d and animation. Below only shows part of the project, click the image for more details.
-					</br><a class="link" href="./img/info/SeaLevelRise.pdf">Click here to download PDF for whole animation.</p></a>
-				</div>
-				<div class="smallPic">
-					<a href="./img/info/SeaLevelRise.jpg"><img id="seaLevelRise" src="./img/info/seaSample.png" alt="Sea Level Rise" width="700px"></a>
-				</div>
-				<div class="example">
-					<h1 class="name"> How Much Do You Pay For Your Colonoscopy</h1>
-					<p class="description">The cost of a colonoscopy in the United States varies widely, from place to place, and even within a city. The average cost of the colonoscopy in the U.S. is about $1,185. However, in many other developed countries, it only costs a few hundred dollars. So why the prices vary so dramatically from place to place? Do you know what you're paying for?</p>
-				</div>
-				<div class="smallPic">
-					<a href="./img/info/colonoscopyL.jpg"><img id="colonoscopy" src="./img/info/colonoscopy.jpg" alt="colonoscopy" width="600px"></a>
-				</div>
-				<div class="example">
-					<h1 class="name"> Interactive Graphic Samples</h1>
-					<p class="description">Learning d3.js this semester, I'm currently making some interactive infographics, although no whole project can be provided yet, here are some examples I made as homework.
-					</br><a class="link" href="http://bl.ocks.org/jowang0319/56c1a815be4b33d1e8d9">A scrolling sample work about the relationship between under 5 mortality rate and the female education.</a>
-					</br><a class="link" href="http://bl.ocks.org/jowang0319/50b694626e237217c046">A small multiples sample</a>
-					</br><a class="link" href="http://bl.ocks.org/jowang0319/raw/8d39dff5d4b070cbbac2/">Scatter plot: Does Female Education Help Decreasing the Infant Mortality Rate?</a>
-					</br><a class="link" href="http://bl.ocks.org/jowang0319/raw/3ad2465fb2e5b9aa2c81/">Line Plot: Adolescent Fertility Rate by Country(‰) </a>
-					</br><a class="link" href="http://bl.ocks.org/jowang0319/raw/006ab6cc6779a719b96e/">Dot Plot: Under Five Infant Mortality Rate by World Region, 1990 versus 2015 </a>
-					</br><a class="link" href="http://bl.ocks.org/jowang0319/raw/83552dce753ec338a504/">Sortable heatmap table: Government Resources for Health as a Percentage of Total Expenditure on Health </a>
-					</br><a class="link" href="http://bl.ocks.org/jowang0319/raw/0991b58b29039bfcbb56/"> HighChart: External Resources for Health as a Percentage of Total Expenditure on Health</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</body>
+    	<meta charset="utf-8">
+    	<title>Zhizhou Wang - Visualization</title>
+        <link rel="stylesheet" href="css/sub-style.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    	<style>
+    	</style>
+    </head>
+
+    <body>
+        <div id = "nav">
+                <nav class="main-nav2">
+                    <p id="nav-name"> ZHIZHOU WANG</p>
+                    <a class="nav-index" id="nav-index-last" href="video.html">Videos</a>
+                    
+                    <a class="nav-index" href="poster.html">Posters</a>
+                    <a class="nav-index" href="infographic.html">Visualization</a>
+                    <a class="nav-index" href="aboutme.html">About Me</a>
+                    <a class="nav-index" href="index.html">Home</a>
+                </nav> 
+        </div>
+
+        <div class="col-md-12" id="main">
+            <div class="col-md-12" id= "draw-line">
+                <h1 class="page-title">Visualization</h1>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="http://zhizhouwang.me/myProject/"><img class="main-sample" src="./image/unicef1.png"></a>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="main-subtitle"><a class="main-link" href="http://zhizhouwang.me/myProject/">Mothers and Children: A Study of Relationship Between Female Education and Under Five Mortality Rate</a></h4>
+                    <p class="main-date">Dec. 2015</p>
+                    <p class="main-subtext">Half the reduction in child mortality over the past 40 years can be attributed to the better education of women. For every one-year increase in the average education of reproductive-age women, a country experienced a 9.5 percent decrease in the child deaths. 
+                    <br>A mother's education affects her children's health in myriad ways. 
+                    <br>Better-educated women are more likely to understand disease-prevention measures such as vaccines and mosquito nets, and to use them. They are more likely to take a sick child to a clinic early and to follow treatment instructions. They are more likely to understand germ theory and set clean water and sanitation as household priorities.  
+                    <p class="main-technique">Tool used: JQuery, d3</p>
+                    <p><a class="main-link" href="http://zhizhouwang.me/myProject/">Click for the whole project.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="./image/info/Homelessness.pdf"><img class="main-sample" src="./image/info/homelessness.jpg"></a>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="main-subtitle"><a class="main-link" href="./image/info/Homelessness.pdf">Can Your Salary Balance Your House Value? A Study of Homelessness in Major Cities of the United States</a></h4>
+                    <p class="main-date">Mar. 2015</p>
+                    <p class="main-subtext">On a Single Night in January 2014, 578,424 people were homeless in the United States. In the past eight years, the total homeless population in the United States was decreasing. This is undoubtedly a good news. However, the total homelesspopulation in the New York City was increasing constantly. Coincidentally, in most of the largest cities in the United States, the homeless population is actually rising comparing to reduction in the nation wide. This comparison thus raises our question. Why does this situation happen?  
+                    <p class="main-technique">Tool used: Illustrator</p>
+                    <p><a class="main-link" href="./image/info/Homelessness.pdf">Click for the whole project.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="./image/info/captain.pdf"><img class="main-sample" src="./image/info/captain.png"></a>
+                </div>
+                <div class="col-md-7" >
+                    <h4 class="main-subtitle"><a class="main-link" href="./image/info/captain.pdf">Captain America: What Makes Him a Hero?</a></h4>
+                    <p class="main-date">Apr. 2015</p>
+                    <p class="main-subtext">Captain America, one of the most famous Marvel Super Heroes, has a great fame even in China. This infographic is about Captain America. Comparing him with himself, with normal people, with other Avengers, as well as with his enemy, we explore the special character of this normal but anormal person, see what makes him different from others, what makes him a noble man and what makes him a superhero. 
+                    <p class="main-technique">Tool used: Illustrator, Photoshop</p>
+                    <p><a class="main-link" href="./image/info/captain.pdf">Click for the whole project.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="./image/info/SeaLevelRise.pdf"><img class="main-sample" src="./image/info/seaSample.png"></a>
+                </div>
+                <div class="col-md-7" >
+                    <h4 class="main-subtitle"><a class="main-link" href="./image/info/SeaLevelRise.pdf">Miami Underwater</a></h4>
+                    <p class="main-date">May. 2015</p>
+                    <p class="main-subtext">Rapid climate change has been affecting Miami for several years. The high
+                    temperatures have resulted in higher tides, storm surges and sea levels.
+                    The city has felt the impact in more ways than one, including economically and demographically. <br>In this project, we discuss the sea level rise through several aspects: history, future tendency, relationship with economy, impact on storm, as well as policies. This is a group working project using 3d and animation. Left only shows part of the project, click the image for more details.  
+                    <p class="main-technique">Tool used: Illustrator, Maya, Photoshop</p>
+                    <p><a class="main-link" href="./image/info/SeaLevelRise.pdf" download>Click here to download PDF for whole animation.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="./image/info/colonoscopy.pdf"><img class="main-sample" src="./image/info/colonoscopy.jpg"></a>
+                </div>
+                <div class="col-md-7" >
+                    <h4 class="main-subtitle"><a class="main-link" href="./image/info/colonoscopy.pdf">How Much Do You Pay For Your Colonoscopy</a></h4>
+                    <p class="main-date">Feb. 2015</p>
+                    <p class="main-subtext">
+                        A colonoscopy is an exam that views the
+                        inside of the colon (large intestine) and
+                        rectum, using a tool called colonoscope. The
+                        colonoscope has a small camera attached to a
+                        flexible tube that can reach the length of the colon.<br>
+                        The cost of a colonoscopy in the United States varies widely, from place to place, and even within a city. The average cost of the colonoscopy in the U.S. is about $1,185. However, in many other developed countries, it only costs a few hundred dollars. So why the prices vary so dramatically from place to place? Do you know what you're paying for?  
+                    <p class="main-technique">Tool used: Illustrator</p>
+                    <p><a class="main-link" href="./image/info/colonoscopy.pdf" >Click for the whole project.</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-12" id= "draw-line">
+                <h1 class="page-title2">Small d3 Projects</h1>
+            </div>
+
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="http://bl.ocks.org/jowang0319/raw/c7d9dfa0e8b8f5088107/"><img class="main-sample" src="./image/info/stackedBar.png"></a>
+                </div>
+                <div class="col-md-7" >
+                    <h4 class="main-subtitle"><a class="main-link" href="hhttp://bl.ocks.org/jowang0319/raw/c7d9dfa0e8b8f5088107/">Stacked Bar Chart: Deaths from Illnesses in 2013 in Selected South African Countries</a></h4>
+                    <p class="main-date">Oct. 2015</p>
+                    <p class="main-technique">Tool used: d3</p>
+                    <p><a class="main-link" href="http://bl.ocks.org/jowang0319/c7d9dfa0e8b8f5088107" >Click for the code and the whole project.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="http://bl.ocks.org/jowang0319/raw/50b694626e237217c046/"><img class="main-sample" src="./image/info/smallMul.png"></a>
+                </div>
+                <div class="col-md-7" >
+                    <h4 class="main-subtitle"><a class="main-link" href="http://bl.ocks.org/jowang0319/raw/50b694626e237217c046/">Small Multiples: Adolescent Fertility Rate by Country</a></h4>
+                    <p class="main-date">Oct. 2015</p>
+                    <p class="main-subtext">
+                        The adolescent fertility rate is closely related to the infant mortality rate, it varies from place to place. Below shows the trend of the rate from year 1961 to year 2014. Although the overall trend is decreasing, the rate in Sub-saharan Afica area remains to be high.  
+                    <p class="main-technique">Tool used: d3</p>
+                    <p><a class="main-link" href="http://bl.ocks.org/jowang0319/50b694626e237217c046" >Click for the code and the whole project.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="http://bl.ocks.org/jowang0319/raw/afe6b2d4375d53e32ab6/"><img class="main-sample" src="./image/info/transitionPlot.png"></a>
+                </div>
+                <div class="col-md-7" >
+                    <h4 class="main-subtitle"><a class="main-link" href="http://bl.ocks.org/jowang0319/raw/afe6b2d4375d53e32ab6/">Transition Scatter Plot: UNICEF Adolescent Data Regarding Gender</a></h4>
+                    <p class="main-date">Oct. 2015</p> 
+                    <p class="main-technique">Tool used: d3</p>
+                    <p><a class="main-link" href="http://bl.ocks.org/jowang0319/afe6b2d4375d53e32ab6" >Click for the code and the whole project.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="http://bl.ocks.org/jowang0319/raw/4538d17c9038654b9ceb/"><img class="main-sample" src="./image/info/lineChart.png"></a>
+                </div>
+                <div class="col-md-7" >
+                    <h4 class="main-subtitle"><a class="main-link" href="http://bl.ocks.org/jowang0319/raw/4538d17c9038654b9ceb/">Line Chart: Adolescent Fertility Rate by Country(‰)</a></h4>
+                    <p class="main-date">Oct. 2015</p> 
+                    <p class="main-technique">Tool used: d3</p>
+                    <p><a class="main-link" href="http://bl.ocks.org/jowang0319/4538d17c9038654b9ceb" >Click for the code and the whole project.</a></p>
+                </div>
+            </div>
+            
+
+
+
+    </body>
+    
+
 </html>

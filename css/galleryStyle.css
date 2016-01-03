@@ -32,8 +32,7 @@ article, aside, figure, footer, header, hgroup,menu, nav, section {
 		margin-top: -38px;
 	}
 	.gallery{
-		width:800px;
-		margin-left:130px;
+		width:100%;
 	}
 	.gallery ul{
 		 list-style: none;
@@ -54,5 +53,5 @@ article, aside, figure, footer, header, hgroup,menu, nav, section {
 		-moz-box-shadow: 9px 10px 61px -24px rgba(0,0,0,0.52);
 		box-shadow: 9px 10px 61px -24px rgba(0,0,0,0.52);
 		cursor: pointer;
-		background-color: #d1aeb0;
+		background-color: #EBDDA7;
 	}

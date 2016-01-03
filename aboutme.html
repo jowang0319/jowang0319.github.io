@@ -1,41 +1,77 @@
 <!DOCTYPE html>
-<hmtl lang="en">
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>Zhizhou Wang</title>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis">
-		<link rel="stylesheet" type="text/css" href="./css/style.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type='text/javascript' src='./js/script3.js'></script>
-	</head>
-	<body>
-		<div id="body">
-		<div id="sample"></div>
-		<div id="title2">
-			<p> About Me </p>
-		</div>
-		<div id="fixed">
-			<a href="index.html"><div class = "nav2"><p> Home </p></div></a>
-			<a href="infographic.html"><div class = "nav2" style="margin-top:10px"><p> Infographics </p></div></a>
-			<a href="poster.html"><div class = "nav2" style="margin-top:10px"><p> Posters </p></div></a>
-			<a href="photo.html"><div class = "nav2" style="margin-top:10px"><p> Photos </p></div></a>
-			<a href="video.html"><div class = "nav2" style="margin-top:10px"><p> Videos </p></div></a>
-		</div>
-		<div id="all">
-			<div class="content2">
-				<div class="example">
-					<div id="myPhoto"></div>
-					<h1 class="name"> Contact Me</h1>
-					<p class="description">Phone: (305)496-3179
-					</br>Email: <a class="link" href="mailto:jowang0319@gmail.com?Subject=Hello" >jowang0319@gmail.com</a>
-					</br>Address: I'm currently studying in University of Miami!
-					</br>Resume: <a class="link" href="./img/resume_zhizhou wang.pdf">Download here!</a>
-					</p>
-				</div>
-				<div class="smallPic">
-					<a href="./img/resume_zhizhou wang.pdf"><img id="resume" src="./img/resume.jpg" alt="Homelessness" width="700px"></a>
-				</div>
-			</div>
-		</div>
-	</body>
+    	<meta charset="utf-8">
+    	<title>Zhizhou Wang - About Me</title>
+        
+        <link rel="stylesheet" href="css/sub-style2.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    	<style>
+    	</style>
+    </head>
+
+    <body>
+        <div id = "nav">
+                <nav class="main-nav2">
+                    <p id="nav-name"> ZHIZHOU WANG</p>
+                    <a class="nav-index" id="nav-index-last" href="#">Videos</a>
+                    
+                    <a class="nav-index" href="#">Posters</a>
+                    <a class="nav-index" href="infographic.html">Infographics</a>
+                    <a class="nav-index" href="#">About Me</a>
+                    <a class="nav-index" href="index.html">Home</a>
+                </nav> 
+        </div>
+
+        <div class="col-md-12" id="main">
+            <div class="col-md-12" id= "draw-line">
+                <h1 class="page-title">About Me</h1>
+            </div>
+
+            <div class="col-md-12" >
+                    <div class="col-md-5">
+                        <img src="./image/myPic.jpg" id="main-pic">
+                    </div>
+                    <div class ="col-md-7">
+                        <p class="main-content">I am a current student of <a class="main-link" href="http://welcome.miami.edu/">University of Miami</a>, mastering in Public Administration.
+                        <br>
+                        <br>
+                        I have mastered several languages including Chinese, English, Spanish and even Shanghainese, which allow me to not only interact better with people from different countries and places, but also understand better the culture and history from these languages. Just like the language, suitable way of representation enhances reading experience of readers.
+                        <br>
+                        <br>
+                        In primary school I took part of composition competitions where I started to find the most effective and efficient way to tell a story. Later I learned Photoshop to make <a class="main-link" href="poster.html">posters</a>, Premiere to edite <a class="main-link" href="video.html">videos</a>. For me, all of these are tools that help communicating the story I want to tell. 
+                        <br>
+                        <br>
+                        Luckily, in my current studies,  I’ve had the opportunity to take statistics courses as well as data visualization courses, where I learned that there is observation of data and mastered the tools to help communicating the story in a better way.
+                        </br>
+                        <br>
+                        In 2015, I made several projects with Illustrator and d3 regarding different topics such as <a class="main-link" href="./image/info/Homelessness.pdf">homelessness</a>, <a class="main-link" href="./image/info/captain.pdf">Captain America</a>, <a class="main-link" href="./image/info/SeaLevelRise.pdf">Sea Level Rise</a>, and <a class="main-link" href="http://zhizhouwang.me/myProject/">Under Five Mortality Rate</a>.
+                        <br>
+                        <br>
+                        I'm planning to further my study in data story telling after graduating from UM.
+                        <br>
+                        <br>
+                        In daily life, travelling around the World is always my biggest dream. I like to see magnificent sceneries, taste international cuisines and meet people and listen to their stories. Afterall,<span id="poem"> we live in this World when we love it. </span>
+                        </p>
+                        <p class="main-contact">
+                            <strong>Resume | <a class="main-link" href=#>English</a></strong>
+                            <br>
+                            <strong>GitHub | <a class="main-link" href="https://github.com/jowang0319">@jowang0319</a></strong>
+                            <br>
+                            <strong>Twitter | <a class="main-link" href="https://twitter.com/jo_zz_wang">@jowang0319</a></strong>
+                            <br>
+                            <strong>LinkedIn | <a class="main-link" href="https://www.linkedin.com/profile/view?id=AAIAABXnbtgBP4U4cKuk7psVWvnKqAsrvLL_vNs&trk=nav_responsive_tab_profile_pic">wang zhizhou</a></strong>
+                            <br>
+                            <strong>Email | <a class="main-link" href="mailto:jowang0319@gmail.com?Subject=Hello" target="_top">jowang0319@gmail.com</a></strong>
+                        </p>
+                    </div>
+            </div>
+
+
+        </div>
+
+
+    </body>
+    
+
 </html>
