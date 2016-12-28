@@ -2,29 +2,29 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>Zhizhou Wang - Visualization</title>
-        <link rel="stylesheet" href="css/sub-style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/sub-style.css" />
     	<style>
     	</style>
     </head>
 
     <body>
-        <div id = "nav">
-                <nav class="main-nav2">
-                    <p id="nav-name"> ZHIZHOU WANG</p>
-                    <a class="nav-index" id="nav-index-last" href="video.html">Videos</a>
-                    
-                    <a class="nav-index" href="poster.html">Posters</a>
-                    <a class="nav-index" href="infographic.html">Visualization</a>
-                    <a class="nav-index" href="aboutme.html">About Me</a>
-                    <a class="nav-index" href="index.html">Home</a>
-                </nav> 
+        <div class="col-md-12" id='main-nav'>
+                    <a href='index.html' class='likebutton'>Home</a>
+                    <a href='aboutme.html' class='likebutton'>About Me</a>
+                    <a href='infographic.html' class='button-selected'>Visualization</a>
+                    <a href='video.html' class='likebutton'>Videos</a>
+                    <a href='poster.html' class='likebutton'>Posters</a>
+                    <div class="col-md-12" id='breaker'>
+                </div>
         </div>
 
         <div class="col-md-12" id="main">
             <div class="col-md-12" id= "draw-line">
-                <h1 class="page-title">Visualization</h1>
+                <h1 class="page-title">Interactive</h1>
             </div>
             <div class="col-md-12" id="main-subcontent">
                 <div class="col-md-5">
@@ -35,7 +35,7 @@
                     <p class="main-date">May. 2016</p>
                     <p class="main-subtext">Many shark populations are declining worldwide, primarily due to overfishing. For the majority of shark species, no international exploitation limits exists. Thus, information on their habitat preferences and the extent of overlap with commercial fisheries is critical for their conservation.   
                     <p class="main-technique">Tool used: Maya, three.js, Premiere, d3</p>
-                    <p><a class="main-link" href="http://zhizhouwang.me/shark_track/">Click for the whole project.</a></p>
+                    <p><a class="main-link" href="http://zhizhouwang.me/shark_track/" target="_blank">Click for the whole project.</a></p>
                 </div>
             </div>
             <div class="col-md-12" id="main-subcontent">
@@ -47,7 +47,35 @@
                     <p class="main-date">Aug. 2016</p>
                     <p class="main-subtext">A study of jumping related competitions in Olympics. Analyzing on the Olympics score in these four sports in track and field events, I therefore explore what are some elements that contribute to the record-breaking of human being.
                     <p class="main-technique">Tool used: Python, d3, Illustrator</p>
-                    <p><a class="main-link" href="http://zhizhouwang.me/all_about_jumping/">Click for the whole project.</a></p>
+                    <p><a class="main-link" href="http://zhizhouwang.me/all_about_jumping/" target="_blank">Click for the whole project.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="http://zhizhouwang.me/airbnb_in_manhattan/"><img class="main-sample" src="./image/info/bnb.png"></a>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="main-subtitle"><a class="main-link" href="http://zhizhouwang.me/airbnb_in_manhattan/">Airbnb in Manhattan</a></h4>
+                    <p class="main-date">Dec. 2016</p>
+                    <p class="main-subtext">Airbnb, the online peer-to-peer marketplace that enables people to list or rent short-term lodging in residential properties founded in 2008, has become one of people's prior choice while travelling in recent years. It has over 2,000,000 listings in 34,000 cities and 191 countries.
+                    </br>
+                    There are 19,248 listings in Manhattan, counting half of all in New York City. This is a project studying through the price, location, accomodates and ratings of Airbnbs in Manhattan.
+                    <p class="main-technique">Tool used: Python, QGis, Illustrator</p>
+                    <p><a class="main-link" href="http://zhizhouwang.me/airbnb_in_manhattan/" target="_blank">Click for the whole project.</a></p>
+                </div>
+            </div>
+            <div class="col-md-12" id="main-subcontent">
+                <div class="col-md-5">
+                    <a class="main-link" href="http://zhizhouwang.me/life_in_cities/"><img class="main-sample" src="./image/info/city_n_culture.png"></a>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="main-subtitle"><a class="main-link" href="http://zhizhouwang.me/life_in_cities/">Cities and Culture</a></h4>
+                    <p class="main-date">Dec. 2016</p>
+                    <p class="main-subtext">From Tokyo to New York, large cities are houses for millions of people from different background, countries, and history. The World Cities Culture Forum collected data of 33 cities around the world and the cultural life within those cities, allowing us to have a better understanding of those large cities in a distinct perspect.
+                    </br>
+                    Looking through the project and get a better understanding of the distinct culture related life there, see which city is best for you?
+                    <p class="main-technique">Tool used: Python, d3, JQuery, Illustrator</p>
+                    <p><a class="main-link" href="http://zhizhouwang.me/life_in_cities/" target="_blank">Click for the whole project.</a></p>
                 </div>
             </div>
             <div class="col-md-12" id="main-subcontent">
@@ -59,7 +87,7 @@
                     <p class="main-date">Aug. 2016</p>
                     <p class="main-subtext">On 15 July 2016, a coup d'état was attempted in Turkey against the government. After that, coup has been a popular topic among the public as well as media. But what's the definition of coup? How do we define a successful coup? With the data from Global instances of coups from 1950 to 2010: A new dataset, the graphic below presents all coups from 1950 to 2010.  
                     <p class="main-technique">Tool used: JQuery, d3</p>
-                    <p><a class="main-link" href="http://zhizhouwang.me/suc_coup/">Click for the whole project.</a></p>
+                    <p><a class="main-link" href="http://zhizhouwang.me/suc_coup/" target="_blank">Click for the whole project.</a></p>
                 </div>
             </div>
             <div class="col-md-12" id="main-subcontent">
@@ -73,8 +101,13 @@
                     <br>A mother's education affects her children's health in myriad ways. 
                     <br>Better-educated women are more likely to understand disease-prevention measures such as vaccines and mosquito nets, and to use them. They are more likely to take a sick child to a clinic early and to follow treatment instructions. They are more likely to understand germ theory and set clean water and sanitation as household priorities.  
                     <p class="main-technique">Tool used: JQuery, d3</p>
-                    <p><a class="main-link" href="http://zhizhouwang.me/myProject/">Click for the whole project.</a></p>
+                    <p><a class="main-link" href="http://zhizhouwang.me/myProject/" target="_blank">Click for the whole project.</a></p>
                 </div>
+            </div>
+            
+
+            <div class="col-md-12" id= "draw-line">
+                <h1 class="page-title2">Print Graphics</h1>
             </div>
             <div class="col-md-12" id="main-subcontent">
                 <div class="col-md-5">
@@ -157,6 +190,7 @@
                 </div>
             </div>
 
+
             <div class="col-md-12" id= "draw-line">
                 <h1 class="page-title2">Small d3 Projects</h1>
             </div>
@@ -205,6 +239,19 @@
                     <p class="main-date">Oct. 2015</p> 
                     <p class="main-technique">Tool used: d3</p>
                     <p><a class="main-link" href="http://bl.ocks.org/jowang0319/4538d17c9038654b9ceb" >Click for the code and the whole project.</a></p>
+                </div>
+            </div>
+
+            <div class='break' class="col-md-12">
+                <hr id='divider'></hr>
+                <div class ="col-md-8">
+                <p id='end'>Copyright &copy; Zhizhou Wang </p>
+                </div>
+                <div class ="col-md-4" id='icondiv'>
+                <a class="main-link" href="mailto:jowang0319@gmail.com?Subject=Hello" target="_top" ><img class='icons' src='./image/icon/email.png'></a>
+                <a class="main-link" href="https://www.linkedin.com/profile/view?id=AAIAABXnbtgBP4U4cKuk7psVWvnKqAsrvLL_vNs&trk=nav_responsive_tab_profile_pic" target="_blank"><img class='icons' src='./image/icon/in.png'></a>
+                <a class="main-link" href="https://github.com/jowang0319"><img class='icons' src='./image/icon/github.png' target="_blank"></a>
+                <a class="main-link" href="https://twitter.com/jo_zz_wang"><img class='icons' src='./image/icon/twitter.png' target="_blank"></a>
                 </div>
             </div>
             

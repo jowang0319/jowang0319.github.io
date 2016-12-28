@@ -1,67 +1,82 @@
-.main-nav2 {
-  background: rgb(237,106,90);
-  height: 130px;
-  z-index: 150;
-  margin-bottom: -130px;
-  box-shadow: 0 2px 3px rgba(0,0,0,.4);
-  opacity: 0.6;
-  position: fixed;
-  width: 100%;
-  top: 0;
+/*new*/
+
+div#main-nav{
+	margin: auto; 
+	width: 100%;
+	text-align: center;
 }
 
-
-#nav-name{
-	float:left;
-	font-size: 45px;
-	margin-left: 4%;
-	margin-top:2.5%;
-	font-family: font-family: 'Dosis', sans-serif;
-	font-weight: 800;
-	color:rgb(255, 229, 229);
+a.likebutton{
+	background-color: none;
+	font-size: 2.5vh;
+	font-family: 'Source Sans Pro', sans-serif;
+	border-color:#F16664;
+	color: gray;
 }
 
-.nav-index{
-	float:right;
-	margin-right: 1%;
-	margin-top: 4%;
-	font-size: 20px;
-	font-family: font-family: 'Dosis', sans-serif;
-	font-weight: 300;
-	color:rgb(244,241,187);
-}
-.nav-index:hover{
-	color:#EBDDA7;
+a.likebutton:hover{
 	text-decoration: none;
-	text-shadow: 2px 2px 5px rgba(11, 23, 0, 0.94);
+	background-color: #F16664;
+	color:white;
+	border-style: solid;
+	border-width: 2px;
 }
 
-#nav-index-last{
-	margin-right: 5%;
+a.button-selected:hover{
+	text-decoration: none;
+	background-color: #F16664;
+	color:white;
+	border-style: solid;
+	border-width: 2px;
 }
 
-.page-title{
-	margin-top: 18%;
-	color:#5CA4A9;
-}
-.page-title2{
-	margin-top: 8%;
-	color:#5CA4A9;
-}
-
-#draw-line{
-	border-bottom:8px solid #f7f7f7;
-	margin-bottom: 1%;
+a.button-selected{
+	background-color: #F16664;
+	color:white;
+	border-style: solid;
+	font-size: 2.5vh;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-#main{
-	margin-left: 5%;
-	width:90%;
+div#breaker{
+	border-bottom: 1px solid #79CCCD;
+	padding-top:1%;
 }
+
+h1#name{
+	font-size: 5vh;
+	font-family: 'Source Sans Pro', sans-serif;
+	z-index: 2;
+	font-weight: 800;
+	color:gray;
+}
+
+span.colored{
+	color:rgba(121,204,205,1);
+}
+
+hr#divider{
+	border-bottom: 1px solid #79CCCD;
+	border-top: none;
+}
+
+img.icons{
+	height:13px;
+}
+
+div#icondiv{
+	text-align:right;
+}
+
+a:hover{
+	opacity:0.5;
+}
+
+/*old*/
+
 
 .main-sample{
 	width:100%;
-
 }
 
 #main-subcontent{
@@ -69,10 +84,10 @@
 	margin-bottom: 5%;
 }
 a.main-link:link{
-	color:#5CA4A9;
+	color:#6BB7B9;
 }
 a.main-link:visited{
-	color:#9BC1BC;
+	color:#6BB7B9;
 }
 .main-subtitle{
 	margin-top: -0.3%;
@@ -103,11 +118,10 @@ p.main-technique{
 
 #poem{
 	font-style: italic;
-	color:#ED6A5A;
+	color:#F16664;
 }
 .main-contact{
 	margin-top: 10%;
-	font-family: 'Enriqueta', serif;
 	font-size: 16px;
 	text-align: center;
 	margin-right: auto;
@@ -117,13 +131,148 @@ p.main-technique{
 
 .main-content{
 	margin-top: 4%;
-	font-family: 'Enriqueta', serif;
-	font-size: 16px;
-	margin-right: 5%;
-	margin-left: 2%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2.3vh;
 }
 a.main-link:hover{
 	opacity:0.7;
 	text-decoration: none;
 	text-shadow: 2px 2px 5px rgba(249, 250, 250, 0.94);
 }
+
+@media only screen and (min-device-width: 769px) {
+	#main{
+		margin-left: 20%;
+		width:60%;
+	}
+	div#main-nav{
+		margin-top: 5%;
+	}
+	a.likebutton{
+		padding-left:20px;
+		padding-right: 20px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	a.button-selected{
+		border-width: 2px;
+		padding-left:20px;
+		padding-right: 20px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	h1#name{
+		margin-top: 5%;
+	}
+	hr#divider{
+		margin-top: 10%;
+		width:100%;
+		padding-top: 10%;
+	}
+	p#end{
+		text-align: left;
+		margin-top: -2.5%;
+		font-size: 1.5vh;
+		color:grey;
+	}
+	div#icondiv{
+		margin-top: -2%;
+	}
+	div.break{
+		margin-top: 5%;
+	}
+
+}
+
+/* For width smaller than 420px: */
+@media all and (max-width: 420px) {
+	#main{
+		width:100%;
+		padding:0px;
+	}
+	h1#name{
+		font-size: 4vh;
+	}
+    div#main-nav{
+		margin: auto; 
+		width: 100%;
+		text-align: center;
+		margin-top: 5%;
+	}
+	a.likebutton{
+		padding-left:2px;
+		padding-right: 2px;
+	}
+	a.button-selected{
+		padding-left:2px;
+		padding-right: 2px;
+	}
+	hr#divider{
+		margin-top: 10%;
+		width:60%;
+	}
+	p#end{
+		text-align: center;
+		margin-top: -4.7%;
+		font-size: 1.3vh;
+		color:grey;
+	}
+	div#icondiv{
+		margin-top: -2.2%;
+	}
+	img.icons{
+		height:13px;
+		margin-right: 4px;
+		margin-left: 4px;
+	}
+	div#icondiv{
+		text-align:center;
+		margin-bottom:5%;
+	}
+}
+
+/* For tablet: */
+@media all and (min-width: 420px) and (max-width: 768px){
+    div#main-nav{
+		margin: auto; 
+		width: 100%;
+		text-align: center;
+		margin-top: 5%;
+	}
+	a.likebutton{
+		padding-left:5px;
+		padding-right: 5px;
+		font-size: 3vh;
+	}
+	a.button-selected{
+		padding-left:5px;
+		padding-right: 5px;
+		font-size: 3vh;
+	}
+	hr#divider{
+		margin-top: 5%;
+		width:60%;
+	}
+	p#end{
+		text-align: center;
+		margin-top: -2.3%;
+		font-size: 1.5vh;
+		color:grey;
+	}
+	div#icondiv{
+		margin-top: 0%;
+		text-align:center;
+		margin-bottom: 5%;
+	}
+	img.icons{
+		height:18px;
+		margin-right: 8px;
+		margin-left: 8px;
+	}
+
+}
+
