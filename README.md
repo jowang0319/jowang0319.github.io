@@ -1,3 +1,2 @@
-# jowang0319.github.io
 
-Portfolio website
+Portfolio website: http://zhizhouwang.me
