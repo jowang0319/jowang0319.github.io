@@ -1,4 +1,4 @@
-var first  = ['student','data visualization designer','graphic designer','writer','photographer','video editor'];
+var first  = ['data visualization designer','graphic designer','UI/UX designer','front-end developer','writer','photographer','video editor'];
 var i = 0;
         
 var maxfirst  = first.length - 1;
