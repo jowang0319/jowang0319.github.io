@@ -1,0 +1,300 @@
+@media all{
+
+	/* Universal class */
+	body{
+		width:90%;
+
+		margin-left:5%;
+	}
+
+	.float_left{
+		float:left;
+	}
+
+	.float_right{
+		float:right;
+	}
+
+	p#end{
+		text-align: left;
+		margin-top: -2.5%;
+		font-size: 12px;
+		color:grey;
+	}
+	div#icondiv{
+		margin-top: -1.8%;
+	}
+	div.break{
+		margin-top: 5%;
+	}
+
+	img.icons{
+		height:13px;
+		margin-right: 4px;
+		margin-left: 4px;
+	}
+
+	/* Top Menu */
+
+	p#name{
+		padding:15px;
+		margin-bottom:0px;
+		font-family:'Source Sans Pro', sans-serif;
+		font-size:20px;
+		color:dimgray;
+	}
+
+	ul#menu{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	/*		  background-color: #333333;*/
+	}
+
+	li.menu_item{
+		float:right;
+	}
+
+	li.menu_item a {
+	  display: block;
+	/*	  color: white;*/
+	  text-align: center;
+	  padding: 16px;
+	  text-decoration: none;
+	  color:darkgray;
+	  cursor:pointer;
+	}
+
+	li.menu_item.selected a {
+	  color:dimgray
+	}
+
+	li.menu_item a:hover {
+	  text-decoration:underline;
+	  color:#f6a192;
+	}
+
+	#menu_hr{
+	/*		margin-top:50px;*/
+
+	}
+
+	#main_header{
+	/*		border-top:1px solid lightgrey;*/
+		border-bottom:1px solid lightgrey;
+		position:fixed;
+		border-top:15px solid white;
+		width:90%;
+		background:white;
+		z-index:10;
+	}
+
+	/* Main Content */
+	#main_content{
+		top:150px;
+		width:60%;
+		margin-left:20%;
+		position:absolute;
+	}
+
+	.main_session{
+		margin-bottom:90px;
+	}
+
+	.span_highlight{
+		color:#f6a192;
+		font-weight:700;
+	}
+
+	.inter_session{
+		text-align:center;
+		color:darkgray;
+		margin-bottom:50px;
+	}
+
+	img.divider{
+		width:100px;
+		margin-top:-15px;
+	}
+
+	/* about me content */
+	#profile_img{
+		width:80%;
+
+	}
+
+	#top_intro{
+		color:dimgray;
+		line-height:1.5;
+		font-size:20px;
+/*		padding-top:25px;*/
+	}
+	#top_intro_2{
+		color:dimgray;
+		line-height:1.5;
+	}
+
+	#top_session{
+/*		padding-top:50px;*/
+		display: flex;
+	  	justify-content: center;
+	  	align-items: center; 
+	}
+
+	/* about me */
+	#about_me_hover{
+		color:dimgray;
+		border-left:2px solid #f6a192;
+		padding-left:15px;
+	}
+
+	.axis.about_me_axis path.domain{
+		stroke-width:0;
+	}
+
+	/*works*/
+	.main-sample{
+		width:100%;
+	}
+
+	div.main_link_div:hover .hover_show_p{
+		display:block;
+	}
+
+	#dashboard_sample_link{
+		background-image:url("../image/info/dashboard-sample.png");
+		height:200px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+/*		border:5px solid white;*/
+	}
+
+	.main_link_div:hover{
+		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+	}
+
+	#interactive_sample_link{
+		background-image:url("../image/info/shark.png");
+		height:200px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	#print_sample_link{
+		background-image:url("../image/info/homelessness.jpg");
+		height:200px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	#poster_sample_link{
+		background-image:url("../image/poster/large/image02.jpg");
+		height:200px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	#video_sample_link{
+		background-image:url("../image/video/video_1.png");
+		height:200px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	.hover_show_p{
+		text-align:center;
+		line-height:200px;
+		color:white;
+		display:none;
+		font-size:20px;
+	}
+
+	/* contact */
+	.mid_align{
+		text-align:center;
+	}
+
+	#download_resume{
+		color:#f6a192;
+	}
+
+	#contact_session{
+		margin-left:-50px;
+	}
+
+	#mobile_works{
+		display:none;
+	}
+
+
+
+}
+
+/*mobile*/
+@media all and (max-width: 420px) {
+
+	/* Universal class */
+	body{
+		width:100%;
+	}
+
+	/* Main Content */
+	#main_content{
+		top:200px;
+		width:90%;
+		margin-left:0%;
+		position:absolute;
+	}
+
+	.hide_xs{
+		display:none;
+	}
+
+	.desktop_works{
+		display:none;
+	}
+
+	#mobile_works{
+		text-align:center;
+		display:inline;
+	}
+
+	#mobile_works a{
+		color:darkgray;
+	}
+
+	#mobile_works a:hover{
+		color:#f6a192;
+	}
+
+	#contact_session{
+		margin-left:0px;
+	}
+
+
+
+}
+
+/*tablet*/
+@media all and (min-width: 426px) and (max-width: 768px) {
+	/* Main Content */
+	#main_content{
+		top:150px;
+		width:90%;
+		margin-left:0%;
+		position:absolute;
+	}
+}
+
+
+/*browser*/
+@media all and (min-width: 769px) and (max-width:1200px) {
+
+
+}
+
+/*extra large*/
+@media all and (min-width: 1300px){
+
+}

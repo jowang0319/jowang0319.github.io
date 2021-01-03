@@ -6,68 +6,149 @@
     	<title>Zhizhou Wang</title>
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Source+Sans+Pro:400,700" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css" />
+<!--         <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+        <script src="https://kit.fontawesome.com/973de6989a.js" crossorigin="anonymous"></script>
+        <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/general.css" />
         
     	<style>
     	</style>
     </head>
 
     <body>
-        <header class="header">
-            <div class="row" id='contain'>
-                <div class="col-md-8" >
-                    <h1 id="name">Hello! I'm <span class='colored'>Zhizhou Wang</span></h1>
-                    <h1 id='whatami'>I'm a <span id="replace" class="introchange"> data viz designer</span></h1>
+
+        <!-- Header -->
+        <div class='' id='main_header'>
+            <div >
+                <div class='float_left'>
+                    <p id='name'>Zhizhou Wang</p>
                 </div>
-                <div class="col-md-4">
-                    <img src='image/me.jpg' id='me'>
+                <div class='float_right'>
+                    <ul id='menu'>
+                        <li class='menu_item'><a href='/contact.html'>Contact</a></li>
+                        <li class='menu_item'><a href='/works.html'>Works</a></li>
+                        <li class='menu_item selected'><a>Home</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-12" id='main-nav'>
-                    <a href='index.html' class='button-selected'>Home</a>
-                    <a href='aboutme.html' class='likebutton'>About Me</a>
-                    <a href='infographic.html' class='likebutton'>Visualization</a>
-                    <a href='video.html' class='likebutton'>Videos</a>
-                    <a href='poster.html' class='likebutton'>Posters</a>
-                    <div class="col-md-12" id='breaker'>
+            </div>
+<!--             <hr id='menu_hr'> -->
+        </div>
+
+        <!-- Main content -->
+        <div class='container-fluid' id='main_content'>
+            <!-- Self Intro -->
+            <div class='row main_session' id='top_session'>
+                <div class='col-md-5 hide_xs'>
+                    <img id='profile_img' src='image/me2.jpg' />
                 </div>
+                <div class='col-md-7' id='top_intro_div'>
+                    <p id='top_intro'>
+                        Hello, my name is <span class='span_highlight'>Zhizhou Wang</span>. I currently work with Equinox Fitness as operational research and data visualization designer. 
+                    </p>
+                    <p id='top_intro_2'>
+                        Joined as the first data visualization specialist, I started my life here designing and creating the first large-scaled company-wide <span class='span_highlight'>d3.js dashboard</span>. The dashboard serves from club managers to corporate executives with detailed operational and business data. Since its launch in 2018, it has grown into a indispensable multi-dimensional tool with more than 200 unique users and 500 pageviews everyday. We have then built a series of dashboards that supports different level of employees with various dimensions of information.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider1 -->
+            <div class='row inter_session'>
                 <div class='col-md-12'>
-                        <div class ="col-md-8">
-                            <p id='end'>Copyright &copy; Zhizhou Wang </p>
-                        </div>
-                        <div class ="col-md-4" id='icondiv'>
-                            <a class="main-link" href="mailto:jowang0319@gmail.com?Subject=Hello" target="_top" ><img class='icons' src='./image/icon/email.png'></a>
-                            <a class="main-link" href="https://www.linkedin.com/profile/view?id=AAIAABXnbtgBP4U4cKuk7psVWvnKqAsrvLL_vNs&trk=nav_responsive_tab_profile_pic" target="_blank"><img class='icons' src='./image/icon/in.png'></a>
-                            <a class="main-link" href="https://github.com/jowang0319"><img class='icons' src='./image/icon/github.png' target="_blank"></a>
-                            <a class="main-link" href="https://twitter.com/jo_zz_wang"><img class='icons' src='./image/icon/twitter.png' target="_blank"></a>
-                        </div>
-                    </div>
-                
+                    About Me<br>
+                    <img class='divider' src='image/divider1.png' />
                 </div>
+            </div>
+
+            <!-- About me -->
+            <div class='row main_session'>
+                <div class='col-md-12'>
+                    <div id='about_me_session'>
+ <!--                        <p>Hover</p> -->
+                    </div>
+                    <div id='about_me_hover'>
+                        test
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider2 -->
+            <div class='row inter_session'>
+                <div class='col-md-12'>
+                    Works<br>
+                    <img class='divider' src='image/divider1.png' />
+                </div>
+            </div>
+
+            <!-- Works -->
+            <div class='row main_session' id='mobile_works'>
+                <div class='col-xs-12'>
+                    <a class="main-link" href="http://localhost:8000/works.html">Dashboards
+                    </a><br>
+                    <a class="main-link" href="http://localhost:8000/works.html?interactive">Interactive
+                    </a><br>
+                    <a class="main-link" href="http://localhost:8000/works.html?print_graphics">Print Graphics
+                    </a><br>
+                    <a class="main-link" href="http://localhost:8000/works.html?poster">Posters
+                    </a><br>
+                    <a class="main-link" href="http://localhost:8000/works.html?video">Videos
+                    </a><br>
+                </div>
+            </div>
+
+            <!-- Works -->
+            <div class='row main_session desktop_works' id=''>
+                <a class="main-link" href="http://localhost:8000/works.html"><div class='col-sm-5 main_link_div' id='dashboard_sample_link'>
+                    <p class='hover_show_p'>Dashboards</p>
+                </div></a>
+
+                <div class='col-sm-2'></div>
+
+                <a class="main-link" href="http://localhost:8000/works.html?interactive"><div class='col-sm-5 main_link_div' id='interactive_sample_link'>
+                    <p class='hover_show_p'>Interactive</p>
+                </div></a>
                 
             </div>
-        </header>
-        <!-- <div class="row">
-            <div class="col-md-12" id = "nav">
-                <nav class="main-nav">
-                    <p id="nav-name"> ZHIZHOU WANG</p>
-                    <a class="nav-index" id="nav-index-last" href="video.html">Videos</a>
-                    
-                    <a class="nav-index" href="poster.html">Posters</a>
-                    <a class="nav-index" href="infographic.html">Visualization</a>
-                    <a class="nav-index" href="aboutme.html">About Me</a>
-                    <a class="nav-index" href="index.html">Home</a>
-                </nav> 
-            </div> -->
-<!--         </div> -->
+            <div class='row main_session desktop_works'>
+                <a class="main-link" href="http://localhost:8000/works.html?print_graphics"><div class='col-sm-5 main_link_div' id='print_sample_link'>
+                    <p class='hover_show_p'>Print Graphics</p>
+                </div></a>
+
+                <div class='col-sm-2'></div>
+
+                <a class="main-link" href="http://localhost:8000/works.html?poster"><div class='col-sm-5 main_link_div' id='poster_sample_link'>
+                    <p class='hover_show_p'>Posters</p>
+                </div></a>
+            </div>
+            <div class='row main_session desktop_works'>
+                <a class="main-link" href="http://localhost:8000/works.html?video"><div class='col-sm-5 main_link_div' id='video_sample_link'>
+                    <p class='hover_show_p'>Video Editing</p>
+                </div></a>
+
+                <div class='col-md-2'></div>
+
+<!--                 <a class="main-link" href=""><div class='col-md-5 main_link_div' id='poster_sample_link'>
+                    <p class='hover_show_p'>Posters</p>
+                </div></a> -->
+            </div>
             
+            <div class='row' id='bottom_footer'>
+                <hr>
+                <div class ="col-md-8">
+                    <p id='end'>Copyright &copy; Zhizhou Wang </p>
+                </div>
+                <div class ="col-md-4" id='icondiv'>
+                    <a class="main-link" href="mailto:jowang0319@gmail.com?Subject=Hello" target="_top" ><img class='icons' src='./image/icon/email.png'></a>
+                    <a class="main-link" href="https://www.linkedin.com/profile/view?id=AAIAABXnbtgBP4U4cKuk7psVWvnKqAsrvLL_vNs&trk=nav_responsive_tab_profile_pic" target="_blank"><img class='icons' src='./image/icon/in.png'></a>
+                    <a class="main-link" href="https://github.com/jowang0319"><img class='icons' src='./image/icon/github.png' target="_blank"></a>
+                    <a class="main-link" href="https://twitter.com/jo_zz_wang"><img class='icons' src='./image/icon/twitter.png' target="_blank"></a>
+                </div>
+            </div>
         </div>
 
 
-
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script src="js/velocity.min.js"></script>
-    <script src="js/velocity.ui.min.js"></script>
-    <script src="js/change.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/aboutme.js"></script>
 </html>
